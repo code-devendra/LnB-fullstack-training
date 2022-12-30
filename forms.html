@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html - Forms</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.9);
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: azure;
+            text-align: center;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            font-size: 20px;
+            width: 50%;
+            max-width: 700px;
+            min-width: 400px;
+            margin: 0 auto 20px auto;
+            padding: 0 0 15px 15px;
+        }
+
+        .about {
+            color: rgb(87, 87, 87);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Different Ways to take input in - HTML FORM</h1>
+    <form>
+        <br>
+        <p class="about"><em>&lt;!-- Using type="text"--&gt;</em></p>
+        <label for="fullname">Full Name : </label>
+        <input type="text" id="fullname">
+        <br><br>
+
+        <p class="about"><em>&lt;!-- Using type="password"--&gt;</em></p>
+        <label for="pass">Password : </label>
+        <input type="password" name="" id="pass"><br>
+        <br>
+
+        <p class="about"><em>&lt;!-- Using type="email"--&gt;</em></p>
+        <label for="mail">Email : </label>
+        <input type="email" name="" id="mail"><br>
+        <br>
+
+        <p class="about"><em>&lt;!-- Using type="number"--&gt;</em></p>
+        <label for="number">Phone no. : </label>
+        <input type="number" name="" id="number" min="1000000000" max="9999999999"><br>
+        <br>
+
+        <p class="about"><em>&lt;!-- Using type="color"--&gt;</em></p>
+        <label for="color">Your fav color code : </label>
+        <input type="color" name="" id="color"><br>
+        <br>
+
+        <p class="about"><em>&lt;!-- Using type="file"--&gt;</em></p>
+        <label for="yourfiles"> Please upload a file : </label>
+        <input type="file" name="" id="yourfiles"><br>
+        <br>
+
+        <p class="about"><em>&lt;!-- Using type="date"--&gt;</em></p>
+        <label for="dob">Enter your date of birth : </label>
+        <input type="date" name="" id="dob"><br>
+        <br>
+
+        <p class="about"><em>&lt;!-- Using type="datetime"--&gt;</em></p>
+        <label for="DT">Date and Tme : </label>
+        <input type="datetime-local" name="" id="DT"><br>
+        <br>
+
+        <!-- <input type="hidden" value="Hello"> -->
+
+        <p class="about"><em>&lt;!-- Using type="radio"--&gt;</em></p>
+        <p>Please select your gender : </p>
+        <input type="radio" name="gender" id="male">
+        <label for="male"> Male</label><br>
+
+        <input type="radio" name="gender" id="female">
+        <label for="female"> Female</label><br>
+        <input type="radio" name="gender" id="other">
+        <label for="other"> Other</label>
+        <br><br>
+
+        <p class="about"><em>&lt;!-- Using type="checkbox"--&gt;</em></p>
+        <p>Please select your vehicle : </p>
+        <input type="checkbox" name="" id="car">
+        <label for="car"> Car</label><br>
+
+        <input type="checkbox" name="" id="bus">
+        <label for="bus"> Bus</label><br>
+
+        <input type="checkbox" name="" id="plane">
+        <label for="plane"> Plane</label><br>
+        <br>
+
+        <p class="about"><em>&lt;!-- Using select and option element --&gt;</em></p>
+        <select name="" id="">
+            <option value="">Select one</option>
+            <option value="">Car</option>
+            <option value="">Bus</option>
+            <option value="">Plane</option>
+        </select><br>
+        <br>
+
+        <p class="about"><em>&lt;!-- Using type="url"--&gt;</em></p>
+        <input type="url" name="" id=""><br><br>
+
+        <p class="about"><em>&lt;!-- Using type="reset & submit"--&gt;</em></p>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
