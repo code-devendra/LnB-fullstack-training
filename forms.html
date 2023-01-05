@@ -36,25 +36,28 @@
 <body>
     <h1>Different Ways to take input in - HTML FORM</h1>
     <form>
-        <br>
-        <p class="about"><em>&lt;!-- Using type="text"--&gt;</em></p>
-        <label for="fullname">Full Name : </label>
-        <input type="text" id="fullname">
-        <br><br>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <br>
+            <p class="about"><em>&lt;!-- Using type="text"--&gt;</em></p>
+            <label for="fullname">Full Name : </label>
+            <input type="text" id="fullname" name="fullname" required placeholder="please enter your name...">
+            <br><br>
 
-        <p class="about"><em>&lt;!-- Using type="password"--&gt;</em></p>
-        <label for="pass">Password : </label>
-        <input type="password" name="" id="pass"><br>
-        <br>
+            <p class="about"><em>&lt;!-- Using type="password"--&gt;</em></p>
+            <label for="pass">Password : </label>
+            <input type="password" name="password" id="pass" placeholder="Enter your password..."><br>
+            <br>
 
-        <p class="about"><em>&lt;!-- Using type="email"--&gt;</em></p>
-        <label for="mail">Email : </label>
-        <input type="email" name="" id="mail"><br>
-        <br>
+            <p class="about"><em>&lt;!-- Using type="email"--&gt;</em></p>
+            <label for="mail">Email : </label>
+            <input type="email" name="email" id="mail" placeholder="Enter your email..."><br>
+            <br>
 
-        <p class="about"><em>&lt;!-- Using type="number"--&gt;</em></p>
-        <label for="number">Phone no. : </label>
-        <input type="number" name="" id="number" min="1000000000" max="9999999999"><br>
+            <p class="about"><em>&lt;!-- Using type="number"--&gt;</em></p>
+            <label for="number">Phone no. : </label>
+            <input type="number" name="phone-no." id="number" min="1000000000" max="9999999999"><br>
+        </fieldset>
         <br>
 
         <p class="about"><em>&lt;!-- Using type="color"--&gt;</em></p>
@@ -64,18 +67,21 @@
 
         <p class="about"><em>&lt;!-- Using type="file"--&gt;</em></p>
         <label for="yourfiles"> Please upload a file : </label>
-        <input type="file" name="" id="yourfiles"><br>
+        <input type="file" name="" id="yourfiles" multiple><br>
         <br>
 
         <p class="about"><em>&lt;!-- Using type="date"--&gt;</em></p>
         <label for="dob">Enter your date of birth : </label>
-        <input type="date" name="" id="dob"><br>
+        <input type="date" name="" id="dob" max="2023-01-03"><br>
         <br>
 
         <p class="about"><em>&lt;!-- Using type="datetime"--&gt;</em></p>
         <label for="DT">Date and Tme : </label>
         <input type="datetime-local" name="" id="DT"><br>
         <br>
+
+        <p class="about"><em>&lt;!-- Using type="range"--&gt;</em></p>
+        <input type="range" name="" id="range" min="1" max="10" value="9">
 
         <p class="about"><em>&lt;!-- Using type="radio"--&gt;</em></p>
         <p>Please select your gender : </p>
@@ -111,6 +117,9 @@
 
         <p class="about"><em>&lt;!-- Using type="url"--&gt;</em></p>
         <input type="url" name="" id=""><br><br>
+
+        <p class="about"><em>&lt;!-- Using textarea --&gt;</em></p>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
 
         <p class="about"><em>&lt;!-- Using type="reset & submit"--&gt;</em></p>
         <input type="reset" value="Reset">
