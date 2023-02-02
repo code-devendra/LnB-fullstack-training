@@ -47,7 +47,6 @@ form {
     margin-left: 50px;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
 }
 
 .input-box {
